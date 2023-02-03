@@ -1,0 +1,46 @@
+ISTART = 0
+ISIF   = 2
+LDAU = .TRUE.
+LDAUTYPE = 2
+LDAUL = 3 -1 -1 -1 -1
+LDAUU = 5 0 0 0 0
+LDAUJ = 0 0 0 0 0
+LREAL = Auto
+LMAXMIX = 6
+IDIPOL = 3
+LCORR = .TRUE.
+NSIM = 4
+
+#system
+SYSTEM = CeO2
+LWAVE = .FALSE.
+LCHARG = .FALSE.
+NCORE = 4
+
+#electron, spin and chargedensity
+ADDGRID = .TRUE.
+ICHARG = 2
+ISPIN = 2
+ENCUT = 500.000 eV
+
+#scf
+NELM = 100
+ALGO = normal
+ISMEAR = 0
+SIGMA = 0.1
+LREAL = auto
+PREC = acc
+
+#BEEF-vdw
+GGA=BF
+LUSE_VDW=.TRUE.
+Zab_VDW=-1.8867
+LBEEFENS=.TRUE.
+
+#dynamical matrix vtst
+ICHAIN=1
+IBRION=3
+POTIM=0
+EDIFF=1E-4
+EDIFFG=1E-3
+NSW=16 #5 atoms * 3 + 1 = 16
